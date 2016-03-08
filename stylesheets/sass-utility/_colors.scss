@@ -1,0 +1,32 @@
+$styles: (
+        'color',
+        'border-color',
+        'outline-color',
+        'background-color',
+        'border-top-color',
+        'border-left-color',
+        'border-right-color',
+        'border-bottom-color',
+        'text-decoration-color'
+);
+
+@each $color-name, $color-value in $colors {
+
+  @each $style in $styles {
+
+    .#{$style}-#{$color-name} {
+      #{$style}: $color-value if($colors-important, !important, null);
+    }
+
+  }
+
+  .font-color-#{$color-name} {
+    color: $color-value if($colors-important, !important, null);
+  }
+
+}
+
+::selection {
+  color: $selection-color if($colors-important, !important, null);
+  background-color: $selection-background if($colors-important, !important, null);
+}

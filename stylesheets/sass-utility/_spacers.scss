@@ -1,0 +1,67 @@
+// Spacers
+//
+// ##
+
+$tmp-spacer-zero:       0 if($spacer-important, !important, null);
+
+$tmp-spacer-mobile-xs:  $spacer-mobile-xs if($spacer-important, !important, null);
+$tmp-spacer-mobile-sm:  $spacer-mobile-sm if($spacer-important, !important, null);
+$tmp-spacer-mobile-md:  $spacer-mobile-md if($spacer-important, !important, null);
+$tmp-spacer-mobile-lg:  $spacer-mobile-lg if($spacer-important, !important, null);
+$tmp-spacer-mobile-xl:  $spacer-mobile-xl if($spacer-important, !important, null);
+
+$tmp-spacer-xs:         $spacer-xs if($spacer-important, !important, null);
+$tmp-spacer-sm:         $spacer-sm if($spacer-important, !important, null);
+$tmp-spacer-md:         $spacer-md if($spacer-important, !important, null);
+$tmp-spacer-lg:         $spacer-lg if($spacer-important, !important, null);
+$tmp-spacer-xl:         $spacer-xl if($spacer-important, !important, null);
+
+.spacer-xs {
+  @include utility-div-spacer($spacer-mobile-xs, $spacer-xs)
+}
+
+.spacer-sm {
+  @include utility-div-spacer($spacer-mobile-sm, $spacer-sm)
+}
+
+.spacer-md {
+  @include utility-div-spacer($spacer-mobile-md, $spacer-md)
+}
+
+.spacer-lg {
+  @include utility-div-spacer($spacer-mobile-lg, $spacer-lg)
+}
+
+.spacer-xl {
+  @include utility-div-spacer($spacer-mobile-xl, $spacer-xl)
+}
+
+// Margin
+//
+// ##
+
+@include utility-margin-spacer('0', $tmp-spacer-zero, $tmp-spacer-zero);
+@include utility-margin-spacer('xs', $spacer-mobile-xs, $spacer-xs);
+@include utility-margin-spacer('sm', $spacer-mobile-sm, $spacer-sm);
+@include utility-margin-spacer('md', $spacer-mobile-md, $spacer-md);
+@include utility-margin-spacer('lg', $spacer-mobile-lg, $spacer-lg);
+@include utility-margin-spacer('xl', $spacer-mobile-xl, $spacer-xl);
+
+.no-margin, .margin-0 {
+  margin: $tmp-spacer-zero;
+}
+
+// Padding
+//
+// ##
+
+@include utility-padding-spacer('0', $tmp-spacer-zero, $tmp-spacer-zero);
+@include utility-padding-spacer('xs', $spacer-mobile-xs, $spacer-xs);
+@include utility-padding-spacer('sm', $spacer-mobile-sm, $spacer-sm);
+@include utility-padding-spacer('md', $spacer-mobile-md, $spacer-md);
+@include utility-padding-spacer('lg', $spacer-mobile-lg, $spacer-lg);
+@include utility-padding-spacer('xl', $spacer-mobile-xl, $spacer-xl);
+
+.no-padding, .padding-0 {
+  padding: $tmp-spacer-zero;
+}

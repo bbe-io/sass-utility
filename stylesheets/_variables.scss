@@ -1,0 +1,61 @@
+//== Spacer
+//
+//## Spacer sizes
+
+$spacer-base:                   100px !default;
+$spacer-breakpoint:             768px !default;
+$spacer-mobile-ratio:           0.5   !default;
+
+$spacer-xs:                     $spacer-base * 0.10 !default;
+$spacer-sm:                     $spacer-base * 0.30 !default;
+$spacer-md:                     $spacer-base * 0.60 !default;
+$spacer-lg:                     $spacer-base * 1.00 !default;
+$spacer-xl:                     $spacer-base * 1.50 !default;
+
+$spacer-mobile-xs:              $spacer-xs * $spacer-mobile-ratio !default;
+$spacer-mobile-sm:              $spacer-sm * $spacer-mobile-ratio !default;
+$spacer-mobile-md:              $spacer-md * $spacer-mobile-ratio !default;
+$spacer-mobile-lg:              $spacer-lg * $spacer-mobile-ratio !default;
+$spacer-mobile-xl:              $spacer-xl * $spacer-mobile-ratio !default;
+
+$spacer-important:              false !default;
+
+
+//== Fonts
+//
+//## Font utility classes
+
+$font-weight-thin:              100 !default;
+$font-weight-light:             200 !default;
+$font-weight-book:              300 !default;
+$font-weight-normal:            400 !default;
+$font-weight-medium:            500 !default;
+$font-weight-semibold:          600 !default;
+$font-weight-bold:              700 !default;
+$font-weight-extrabold:         800 !default;
+$font-weight-black:             900 !default;
+
+$letter-spacing-base:           0.02em !default;
+
+$letter-spacing-xs:             $letter-spacing-base * 0.00 !default;
+$letter-spacing-sm:             $letter-spacing-base * 0.50 !default;
+$letter-spacing-md:             $letter-spacing-base * 1.00 !default;
+$letter-spacing-lg:             $letter-spacing-base * 2.50 !default;
+$letter-spacing-xl:             $letter-spacing-base * 5.00 !default;
+
+$font-important:                false !default;
+
+
+//== Colors
+//
+//## Color utility classes
+
+$colors: (
+                                'black': #333333,
+                                'white': #ffffff
+) !default;
+
+$selection-color:               #ffffff !default;
+$selection-background:          #333333 !default;
+
+$colors-important:              false !default;

@@ -1,0 +1,80 @@
+// Text Transform
+//
+// ##
+
+.text-transform-none,
+.text-transform-normal {
+  text-transform: none if($font-important, !important, null);
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase if($font-important, !important, null);
+}
+
+.text-transform-lowercase {
+  text-transform: lowercase if($font-important, !important, null);
+}
+
+// Font Weight
+//
+// ##
+
+.font-weight-thin {
+  font-weight: $font-weight-thin if($font-important, !important, null);
+}
+
+.font-weight-light {
+  font-weight: $font-weight-light if($font-important, !important, null);
+}
+
+.font-weight-book {
+  font-weight: $font-weight-book if($font-important, !important, null);
+}
+
+.font-weight-normal {
+  font-weight: $font-weight-normal if($font-important, !important, null);
+}
+
+.font-weight-medium {
+  font-weight: $font-weight-medium if($font-important, !important, null);
+}
+
+.font-weight-semibold {
+  font-weight: $font-weight-semibold if($font-important, !important, null);
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold if($font-important, !important, null);
+}
+
+.font-weight-extrabold {
+  font-weight: $font-weight-extrabold if($font-important, !important, null);
+}
+
+.font-weight-black {
+  font-weight: $font-weight-black if($font-important, !important, null);
+}
+
+// Letter Spacing
+//
+// ##
+
+.letter-spacing-xs {
+  letter-spacing: $letter-spacing-xs if($font-important, !important, null);
+}
+
+.letter-spacing-sm {
+  letter-spacing: $letter-spacing-sm if($font-important, !important, null);
+}
+
+.letter-spacing-md {
+  letter-spacing: $letter-spacing-md if($font-important, !important, null);
+}
+
+.letter-spacing-lg {
+  letter-spacing: $letter-spacing-lg if($font-important, !important, null);
+}
+
+.letter-spacing-xl {
+  letter-spacing: $letter-spacing-xl if($font-important, !important, null);
+}
