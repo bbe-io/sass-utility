@@ -1,0 +1,26 @@
+{
+  "name": "sass-utility",
+  "version": "0.1.0",
+  "description": "Sass utility class generator",
+  "main": "stylesheets/_sass-utility.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbe-io/sass-utility.git"
+  },
+  "keywords": [
+    "sass",
+    "utility",
+    "class",
+    "generator",
+    "bbe"
+  ],
+  "author": "BBE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbe-io/sass-utility/issues"
+  },
+  "homepage": "https://github.com/bbe-io/sass-utility#readme"
+}

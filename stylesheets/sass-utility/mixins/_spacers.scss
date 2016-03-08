@@ -1,0 +1,124 @@
+// Div spacer mixin
+//
+// ##
+
+@mixin utility-div-spacer($mobile-height, $desktop-height) {
+  font-size: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  height: $mobile-height;
+
+  @media (min-width: $spacer-breakpoint) {
+    height: $desktop-height;
+  }
+}
+
+// Margin spacer mixin
+//
+// ##
+
+@mixin utility-margin-spacer($size, $mobile-margin, $desktop-margin) {
+  .m-a-#{$size} {
+    margin: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin: $desktop-margin;
+    }
+  }
+  .m-t-#{$size} {
+    margin-top: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin-top: $desktop-margin;
+    }
+  }
+  .m-r-#{$size} {
+    margin-right: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin-right: $desktop-margin;
+    }
+  }
+  .m-b-#{$size} {
+    margin-bottom: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin-bottom: $desktop-margin;
+    }
+  }
+  .m-l-#{$size} {
+    margin-left: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin-left: $desktop-margin;
+    }
+  }
+  .m-x-#{$size} {
+    margin-right: $mobile-margin;
+    margin-left: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin-left: $desktop-margin;
+      margin-right: $desktop-margin;
+    }
+  }
+  .m-y-#{$size} {
+    margin-top: $mobile-margin;
+    margin-bottom: $mobile-margin;
+    @media (min-width: $spacer-breakpoint) {
+      margin-top: $desktop-margin;
+      margin-bottom: $desktop-margin;
+    }
+  }
+}
+
+// Padding spacer mixin
+//
+// ##
+
+@mixin utility-padding-spacer($size, $mobile-padding, $desktop-padding) {
+  .p-a-#{$size} {
+    padding: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding: $desktop-padding;
+    }
+  }
+  .p-t-#{$size} {
+    padding-top: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding-top: $desktop-padding;
+    }
+  }
+  .p-r-#{$size} {
+    padding-right: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding-right: $desktop-padding;
+    }
+  }
+  .p-b-#{$size} {
+    padding-bottom: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding-bottom: $desktop-padding;
+    }
+  }
+  .p-l-#{$size} {
+    padding-left: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding-left: $desktop-padding;
+    }
+  }
+  .p-x-#{$size} {
+    padding-right: $mobile-padding;
+    padding-left: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding-left: $desktop-padding;
+      padding-right: $desktop-padding;
+    }
+  }
+  .p-y-#{$size} {
+    padding-top: $mobile-padding;
+    padding-bottom: $mobile-padding;
+    @media (min-width: $spacer-breakpoint) {
+      padding-top: $desktop-padding;
+      padding-bottom: $desktop-padding;
+    }
+  }
+}
